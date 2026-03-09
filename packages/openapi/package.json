@@ -11,6 +11,6 @@
     ".": "./src/client.ts"
   },
   "dependencies": {
-    "openapi-fetch": "catalog:"
+    "openapi-fetch": "catalog:default"
   }
 }
