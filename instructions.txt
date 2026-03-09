@@ -1,0 +1,5 @@
+pnpm dlx create-mastra in apps/api/
+pnpm add @copilotkit/react-core @copilotkit/react-ui in apps/web
+useCopilotReadable (description, value) ==> reads the state
+useCopilotAction (name, description, parameters{name, type(string), description}, handler: ({tasks}) => functions such as addTask), return   ==> 
+while using authenticatiomn / authorization ==> https://mastra.ai/docs/server/request-context

@@ -1,0 +1,29 @@
+{
+  "extends": "@workspace/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "../..",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./*"],
+      "@mastra/*": ["../mastra/src/mastra/*"],
+      "@workspace/ui/*": ["../../packages/ui/src/*"],
+      "@repo/openapi": ["../../packages/openapi/src"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../mastra/src"
+  ],
+  "exclude": ["node_modules"]
+}

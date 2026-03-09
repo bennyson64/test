@@ -1,0 +1,4 @@
+WHen adding mobile app,
+metro config
+tsconfig for paths
+babel.config for paths

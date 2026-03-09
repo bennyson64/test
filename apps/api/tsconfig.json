@@ -1,0 +1,23 @@
+{
+  "extends": "@workspace/typescript-config/base.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "composite": true,
+    "incremental": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "outDir": "./dist",
+    "paths": {
+      "@Frommastra/*": ["../mastra/src/mastra/*"]
+    }
+  },
+  "include": ["src", "../mastra/src"],
+  "exclude": ["node_modules"]
+}
